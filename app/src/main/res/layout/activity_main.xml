@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.stephen.capstone.MainActivity"
+    android:background="#080500">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Grade"
+        android:id="@+id/first_grade_button"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/second_grade_button"
+        android:layout_alignStart="@+id/second_grade_button"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select A Grade"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Grade"
+        android:id="@+id/second_grade_button"
+        android:layout_below="@+id/first_grade_button"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Third Grade"
+        android:id="@+id/third_grade_button"
+        android:layout_below="@+id/second_grade_button"
+        android:layout_alignLeft="@+id/second_grade_button"
+        android:layout_alignStart="@+id/second_grade_button"
+        android:textSize="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fourth Grade"
+        android:id="@+id/fourth_grade_button"
+        android:textSize="24dp"
+        android:layout_below="@+id/third_grade_button"
+        android:layout_alignLeft="@+id/third_grade_button"
+        android:layout_alignStart="@+id/third_grade_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fifth Grade"
+        android:id="@+id/fifth_grade_button"
+        android:textSize="24dp"
+        android:layout_below="@+id/fourth_grade_button"
+        android:layout_alignLeft="@+id/fourth_grade_button"
+        android:layout_alignStart="@+id/fourth_grade_button"
+        android:onClick="fifthgrade"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/apple"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/english_button"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+</RelativeLayout>
